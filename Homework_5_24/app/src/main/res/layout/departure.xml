@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/departure1"
+        android:id="@+id/departure1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="开始旅行！"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ly1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_departure"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/img_departure"/>
+
+            <TextView
+                android:id="@+id/text_departure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_favorite"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/img_favorite" />
+
+            <TextView
+                android:id="@+id/text_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动态" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_my0"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/img_my" />
+
+            <TextView
+                android:id="@+id/text_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
